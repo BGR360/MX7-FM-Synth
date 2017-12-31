@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 410.25, 466.0, 41.0, 22.0 ],
+					"style" : "",
+					"text" : "/ 100."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"format" : 6,
 					"id" : "obj-24",
 					"maxclass" : "flonum",
@@ -71,7 +84,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 337.5, 481.0, 91.75, 22.0 ],
+					"patching_rect" : [ 337.5, 504.0, 91.75, 22.0 ],
 					"style" : "",
 					"text" : "*~ 1."
 				}
@@ -182,7 +195,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 337.5, 525.0, 244.5, 22.0 ],
+					"patching_rect" : [ 337.5, 548.0, 244.5, 22.0 ],
 					"style" : "",
 					"text" : "*~ 1."
 				}
@@ -236,7 +249,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 337.5, 563.0, 77.0, 22.0 ],
+					"patching_rect" : [ 337.5, 586.0, 77.0, 22.0 ],
 					"style" : "",
 					"text" : "j.out~ output"
 				}
@@ -250,7 +263,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 337.5, 604.0, 30.0, 30.0 ],
+					"patching_rect" : [ 337.5, 627.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -289,7 +302,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 587.0, 63.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -482,7 +495,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 665.0, 605.0, 30.0, 30.0 ],
+					"patching_rect" : [ 665.0, 649.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -494,7 +507,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 665.0, 502.0, 76.0, 60.0 ],
+					"patching_rect" : [ 665.0, 546.0, 76.0, 60.0 ],
 					"style" : "",
 					"text" : "Delcare this patch as a Jamoma model"
 				}
@@ -508,7 +521,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 665.0, 569.0, 49.0, 22.0 ],
+					"patching_rect" : [ 665.0, 613.0, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "j.model"
 				}
@@ -600,7 +613,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 1 ],
+					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-24", 0 ]
@@ -696,6 +709,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}

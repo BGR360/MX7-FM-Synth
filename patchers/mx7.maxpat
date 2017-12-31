@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 380.0, 117.0, 689.0, 626.0 ],
+		"rect" : [ 274.0, 80.0, 689.0, 675.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,157 +38,50 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-23",
-					"maxclass" : "live.slider",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"orientation" : 1,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 496.666687, 501.666656, 128.0, 40.0 ],
-					"presentation_rect" : [ 497.666687, 500.666656, 50.0, 40.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "EG Rate 3",
-							"parameter_shortname" : "Release",
-							"parameter_type" : 0,
-							"parameter_mmax" : 99.0,
-							"parameter_unitstyle" : 0
-						}
-
-					}
-,
-					"varname" : "live.slider[3]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 496.666687, 559.0, 134.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote /op1/env/rate3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "live.slider",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"orientation" : 1,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 496.666687, 374.666656, 128.0, 40.0 ],
-					"presentation_rect" : [ 30.0, 30.0, 50.0, 40.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "EG Level 2",
-							"parameter_shortname" : "Sustain",
-							"parameter_type" : 0,
-							"parameter_mmax" : 99.0,
-							"parameter_unitstyle" : 0
-						}
-
-					}
-,
-					"varname" : "live.slider[2]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 496.666687, 433.0, 138.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote /op1/env/level2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "live.slider",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"orientation" : 1,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 496.666687, 254.666656, 128.0, 40.0 ],
-					"presentation_rect" : [ 15.0, 15.0, 50.0, 40.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "EG Rate 2",
-							"parameter_shortname" : "Decay",
-							"parameter_type" : 0,
-							"parameter_mmax" : 99.0,
-							"parameter_unitstyle" : 0
-						}
-
-					}
-,
-					"varname" : "live.slider[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 496.666687, 313.0, 134.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote /op1/env/rate2"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-12",
-					"maxclass" : "live.slider",
+					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"orientation" : 1,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 496.666687, 128.666656, 128.0, 40.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 50.0, 40.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "EG Rate 1",
-							"parameter_shortname" : "Attack",
-							"parameter_type" : 0,
-							"parameter_mmax" : 99.0,
-							"parameter_unitstyle" : 0
-						}
-
-					}
-,
-					"varname" : "live.slider"
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 505.0, 276.0, 50.0, 22.0 ],
+					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-11",
+					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 496.666687, 187.0, 134.0, 22.0 ],
+					"patching_rect" : [ 505.0, 238.0, 134.0, 22.0 ],
 					"style" : "",
 					"text" : "j.remote /op1/env/rate1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
+					"args" : [ "op1" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-1",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mx7_operator~.view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 288.0, 409.0, 450.0, 210.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 450.0, 210.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
@@ -240,7 +133,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 337.0, 399.0, 29.5, 22.0 ],
+					"patching_rect" : [ 280.0, 336.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "1"
 				}
@@ -253,7 +146,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 295.0, 399.0, 29.5, 22.0 ],
+					"patching_rect" : [ 244.5, 336.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "0"
 				}
@@ -412,25 +305,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 506.166687, 219.0, 484.833344, 219.0, 484.833344, 111.0, 506.166687, 111.0 ],
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -449,29 +323,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-9", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 506.166687, 345.0, 484.833344, 345.0, 484.833344, 237.0, 506.166687, 237.0 ],
-					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -486,48 +341,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 506.166687, 465.0, 484.833344, 465.0, 484.833344, 357.0, 506.166687, 357.0 ],
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 506.166687, 591.0, 484.833344, 591.0, 484.833344, 483.0, 506.166687, 483.0 ],
-					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -546,6 +363,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -571,12 +397,22 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-23" : [ "EG Rate 3", "Release", 0 ],
-			"obj-16" : [ "EG Rate 2", "Decay", 0 ],
-			"obj-12" : [ "EG Rate 1", "Attack", 0 ],
-			"obj-20" : [ "EG Level 2", "Sustain", 0 ],
+			"obj-1::obj-16" : [ "eg_rate2", "2", 0 ],
+			"obj-1::obj-20" : [ "eg_rate4", "4", 0 ],
+			"obj-1::obj-6" : [ "eg_rate1", "1", 0 ],
+			"obj-1::obj-22" : [ "eg_level1", "1", 0 ],
+			"obj-1::obj-7" : [ "output_level", "Out Lvl", 0 ],
+			"obj-1::obj-43" : [ "freq_fine", "Freq Fine", 0 ],
+			"obj-1::obj-28" : [ "eg_level4", "4", 0 ],
+			"obj-1::obj-53" : [ "osc_mode", "Mode", 0 ],
+			"obj-1::obj-37" : [ "freq_coarse", "Freq Coarse", 0 ],
+			"obj-1::obj-11" : [ "active", "active", 0 ],
+			"obj-1::obj-26" : [ "eg_level3", "3", 0 ],
+			"obj-1::obj-18" : [ "eg_rate3", "3", 0 ],
 			"obj-10::obj-15::obj-4" : [ "keys_enabled", "Keys Enabled", 0 ],
-			"obj-5" : [ "live.gain~", "live.gain~", 0 ]
+			"obj-5" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1::obj-24" : [ "eg_level2", "2", 0 ],
+			"obj-1::obj-44" : [ "live.slider", "Detune", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -629,6 +465,12 @@
 			}
 , 			{
 				"name" : "calc_eg_level.maxpat",
+				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mx7_operator~.view.maxpat",
 				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
 				"type" : "JSON",
 				"implicit" : 1

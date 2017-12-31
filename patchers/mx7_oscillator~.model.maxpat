@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 113.0, 158.0, 807.0, 564.0 ],
+		"rect" : [ 157.0, 104.0, 658.0, 564.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -202,11 +202,11 @@
 				"box" : 				{
 					"comment" : "(signal) frequency modulation",
 					"id" : "obj-32",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 401.0, 15.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -295,7 +295,7 @@
 				"box" : 				{
 					"comment" : "(signal) oscillator output",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -582,6 +582,19 @@
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-13",
+													"linecount" : 7,
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 28.0, 11.0, 280.0, 100.0 ],
+													"style" : "",
+													"text" : "In FIXED mode, frequency is calculated as such:\nfreq = freq_coarse * freq_fine + detune\n\nWhere:\n- freq_coarse can have values of 1, 10, 100, 1000\n- freq_fine can have values of [1, 9.772]\n- detune can have values [-7c, 7c]"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"color" : [ 0.989256, 0.417462, 0.031845, 1.0 ],
 													"id" : "obj-9",
 													"linecount" : 2,
@@ -589,7 +602,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
-													"patching_rect" : [ 299.0, 78.0, 62.0, 35.0 ],
+													"patching_rect" : [ 299.0, 185.0, 62.0, 35.0 ],
 													"style" : "",
 													"text" : "j.receive detune"
 												}
@@ -604,7 +617,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
-													"patching_rect" : [ 153.0, 78.0, 68.0, 35.0 ],
+													"patching_rect" : [ 153.0, 185.0, 68.0, 35.0 ],
 													"style" : "",
 													"text" : "j.receive freq_fine"
 												}
@@ -619,7 +632,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
-													"patching_rect" : [ 28.0, 78.0, 80.0, 35.0 ],
+													"patching_rect" : [ 28.0, 185.0, 80.0, 35.0 ],
 													"style" : "",
 													"text" : "j.receive freq_coarse"
 												}
@@ -633,7 +646,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 299.0, 134.0, 50.0, 22.0 ],
+													"patching_rect" : [ 299.0, 241.0, 50.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -646,7 +659,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 153.0, 134.0, 50.0, 22.0 ],
+													"patching_rect" : [ 153.0, 241.0, 50.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -659,7 +672,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 28.0, 134.0, 50.0, 22.0 ],
+													"patching_rect" : [ 28.0, 241.0, 50.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -671,7 +684,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 299.0, 21.0, 54.0, 33.0 ],
+													"patching_rect" : [ 299.0, 128.0, 54.0, 33.0 ],
 													"style" : "",
 													"text" : "detune (0-14)"
 												}
@@ -684,7 +697,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 153.0, 21.0, 90.0, 33.0 ],
+													"patching_rect" : [ 153.0, 128.0, 90.0, 33.0 ],
 													"style" : "",
 													"text" : "freq_fine (0-99)"
 												}
@@ -697,7 +710,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 28.0, 21.0, 75.0, 33.0 ],
+													"patching_rect" : [ 28.0, 128.0, 75.0, 33.0 ],
 													"style" : "",
 													"text" : "freq_coarse (0-31)"
 												}
@@ -718,6 +731,15 @@
 											}
  ],
 										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-2", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-21", 0 ]
+												}
+
+											}
+, 											{
 												"patchline" : 												{
 													"destination" : [ "obj-21", 0 ],
 													"disabled" : 0,
@@ -807,6 +829,19 @@
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-7",
+													"linecount" : 7,
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 26.0, 9.0, 280.0, 100.0 ],
+													"style" : "",
+													"text" : "In RATIO mode, frequency is calculated as such:\nfreq = midi_freq * freq_coarse * freq_fine + detune\n\nWhere:\n- freq_coarse can have values of 0.5, [1,31]\n- freq_fine can have values of [1, 1.99]\n- detune can have values of [-7c, 7c]"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-68",
 													"maxclass" : "number",
 													"maximum" : 14,
@@ -815,7 +850,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 417.0, 56.0, 50.0, 22.0 ],
+													"patching_rect" : [ 419.0, 171.0, 50.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -830,7 +865,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 286.0, 56.0, 50.0, 22.0 ],
+													"patching_rect" : [ 288.0, 171.0, 50.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -845,7 +880,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 155.0, 56.0, 50.0, 22.0 ],
+													"patching_rect" : [ 157.0, 171.0, 50.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -859,7 +894,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 24.0, 56.0, 62.0, 22.0 ],
+													"patching_rect" : [ 26.0, 171.0, 62.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -870,7 +905,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 165.0, 492.0, 91.0, 20.0 ],
+													"patching_rect" : [ 167.0, 607.0, 91.0, 20.0 ],
 													"style" : "",
 													"text" : "Step 2: Detune"
 												}
@@ -885,7 +920,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 24.0, 519.0, 109.0, 22.0 ],
+													"patching_rect" : [ 26.0, 634.0, 109.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -897,7 +932,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 24.0, 486.0, 34.0, 22.0 ],
+													"patching_rect" : [ 26.0, 601.0, 34.0, 22.0 ],
 													"style" : "",
 													"text" : "mtof"
 												}
@@ -910,7 +945,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 24.0, 454.0, 412.0, 22.0 ],
+													"patching_rect" : [ 26.0, 569.0, 412.0, 22.0 ],
 													"style" : "",
 													"text" : "expr $f1 + ($f2 - 7) / 100."
 												}
@@ -923,7 +958,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 24.0, 420.0, 34.0, 22.0 ],
+													"patching_rect" : [ 26.0, 535.0, 34.0, 22.0 ],
 													"style" : "",
 													"text" : "ftom"
 												}
@@ -938,7 +973,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 417.0, 200.0, 50.0, 22.0 ],
+													"patching_rect" : [ 419.0, 315.0, 50.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -952,7 +987,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 286.0, 200.0, 50.0, 22.0 ],
+													"patching_rect" : [ 288.0, 315.0, 50.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -966,7 +1001,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 155.0, 200.0, 50.0, 22.0 ],
+													"patching_rect" : [ 157.0, 315.0, 50.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -980,7 +1015,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 24.0, 200.0, 62.0, 22.0 ],
+													"patching_rect" : [ 26.0, 315.0, 62.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -992,7 +1027,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 448.0, 95.0, 96.0, 60.0 ],
+													"patching_rect" : [ 450.0, 210.0, 96.0, 60.0 ],
 													"style" : "",
 													"text" : "Update when any of these parameters change\n"
 												}
@@ -1005,7 +1040,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 4,
 													"outlettype" : [ "float", "float", "float", "float" ],
-													"patching_rect" : [ 24.0, 133.0, 412.0, 22.0 ],
+													"patching_rect" : [ 26.0, 248.0, 412.0, 22.0 ],
 													"style" : "",
 													"text" : "unpack f f f f"
 												}
@@ -1018,7 +1053,7 @@
 													"numinlets" : 4,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 24.0, 95.0, 412.0, 22.0 ],
+													"patching_rect" : [ 26.0, 210.0, 412.0, 22.0 ],
 													"style" : "",
 													"text" : "pak f f f f"
 												}
@@ -1033,7 +1068,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
-													"patching_rect" : [ 286.0, 8.0, 68.0, 35.0 ],
+													"patching_rect" : [ 288.0, 123.0, 68.0, 35.0 ],
 													"style" : "",
 													"text" : "j.receive freq_fine"
 												}
@@ -1048,7 +1083,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
-													"patching_rect" : [ 155.0, 8.0, 80.0, 35.0 ],
+													"patching_rect" : [ 157.0, 123.0, 80.0, 35.0 ],
 													"style" : "",
 													"text" : "j.receive freq_coarse"
 												}
@@ -1060,7 +1095,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 300.0, 173.0, 101.0, 20.0 ],
+													"patching_rect" : [ 302.0, 288.0, 101.0, 20.0 ],
 													"style" : "",
 													"text" : "freq_fine (0-99)"
 												}
@@ -1072,7 +1107,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 171.0, 173.0, 112.0, 20.0 ],
+													"patching_rect" : [ 173.0, 288.0, 112.0, 20.0 ],
 													"style" : "",
 													"text" : "freq_coarse (0-31)"
 												}
@@ -1085,7 +1120,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 165.0, 366.5, 150.0, 47.0 ],
+													"patching_rect" : [ 167.0, 481.5, 150.0, 47.0 ],
 													"style" : "",
 													"text" : "Step 1: Frequency is a harmonic multiple of the played note"
 												}
@@ -1100,7 +1135,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 24.0, 265.0, 50.0, 22.0 ],
+													"patching_rect" : [ 26.0, 380.0, 50.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -1112,7 +1147,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 24.0, 230.5, 34.0, 22.0 ],
+													"patching_rect" : [ 26.0, 345.5, 34.0, 22.0 ],
 													"style" : "",
 													"text" : "mtof"
 												}
@@ -1127,7 +1162,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 24.0, 379.0, 109.0, 22.0 ],
+													"patching_rect" : [ 26.0, 494.0, 109.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -1139,7 +1174,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 286.0, 298.0, 101.0, 22.0 ],
+													"patching_rect" : [ 288.0, 413.0, 101.0, 22.0 ],
 													"style" : "",
 													"text" : "expr 1. + $f1/100"
 												}
@@ -1577,7 +1612,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 24.0, 298.0, 150.0, 22.0 ],
+													"patching_rect" : [ 26.0, 413.0, 150.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -1598,7 +1633,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 24.0, 340.0, 281.0, 22.0 ],
+													"patching_rect" : [ 26.0, 455.0, 281.0, 22.0 ],
 													"style" : "",
 													"text" : "expr $f1 * $f2"
 												}
@@ -1613,7 +1648,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
-													"patching_rect" : [ 417.0, 8.0, 65.0, 35.0 ],
+													"patching_rect" : [ 419.0, 123.0, 65.0, 35.0 ],
 													"style" : "",
 													"text" : "j.receive detune"
 												}
@@ -1628,7 +1663,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
-													"patching_rect" : [ 24.0, 8.0, 105.0, 35.0 ],
+													"patching_rect" : [ 26.0, 123.0, 105.0, 35.0 ],
 													"style" : "",
 													"text" : "j.receive data/in.note_freq"
 												}
@@ -1642,7 +1677,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 24.0, 584.0, 30.0, 30.0 ],
+													"patching_rect" : [ 26.0, 678.0, 30.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -1653,7 +1688,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 433.0, 173.0, 94.0, 20.0 ],
+													"patching_rect" : [ 435.0, 288.0, 94.0, 20.0 ],
 													"style" : "",
 													"text" : "detune (0-14)"
 												}
@@ -1665,7 +1700,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 38.5, 173.0, 99.0, 20.0 ],
+													"patching_rect" : [ 40.5, 288.0, 99.0, 20.0 ],
 													"style" : "",
 													"text" : "played midi note"
 												}
@@ -2135,11 +2170,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 686.0, 544.0, 30.0, 30.0 ],
+					"patching_rect" : [ 510.0, 633.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -2151,7 +2186,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 686.0, 440.0, 85.0, 60.0 ],
+					"patching_rect" : [ 510.0, 529.0, 85.0, 60.0 ],
 					"style" : "",
 					"text" : "Make this subpatch a Jamoma model"
 				}
@@ -2165,7 +2200,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 686.0, 510.0, 49.0, 22.0 ],
+					"patching_rect" : [ 510.0, 599.0, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "j.model"
 				}
@@ -2175,7 +2210,7 @@
 				"box" : 				{
 					"comment" : "(float) midi pitch",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2339,37 +2374,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.in.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.in~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.parameter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.out~.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

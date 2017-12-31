@@ -69,9 +69,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 496.666687, 559.0, 131.0, 22.0 ],
+					"patching_rect" : [ 496.666687, 559.0, 134.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote /op1/eg_rate3"
+					"text" : "j.remote /op1/env/rate3"
 				}
 
 			}
@@ -108,9 +108,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 496.666687, 433.0, 135.0, 22.0 ],
+					"patching_rect" : [ 496.666687, 433.0, 138.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote /op1/eg_level2"
+					"text" : "j.remote /op1/env/level2"
 				}
 
 			}
@@ -147,9 +147,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 496.666687, 313.0, 131.0, 22.0 ],
+					"patching_rect" : [ 496.666687, 313.0, 134.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote /op1/eg_rate2"
+					"text" : "j.remote /op1/env/rate2"
 				}
 
 			}
@@ -186,9 +186,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 496.666687, 187.0, 131.0, 22.0 ],
+					"patching_rect" : [ 496.666687, 187.0, 134.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote /op1/eg_rate1"
+					"text" : "j.remote /op1/env/rate1"
 				}
 
 			}
@@ -610,6 +610,18 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "mx7_oscillator~.model.maxpat",
+				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mx7_envelope~.model.maxpat",
+				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "calc_eg_rate.maxpat",
 				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
 				"type" : "JSON",
@@ -617,12 +629,6 @@
 			}
 , 			{
 				"name" : "calc_eg_level.maxpat",
-				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mx7_oscillator~.model.maxpat",
 				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
 				"type" : "JSON",
 				"implicit" : 1

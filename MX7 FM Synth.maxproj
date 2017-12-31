@@ -2,8 +2,8 @@
 	"name" : "MX7 FM Synth",
 	"version" : 1,
 	"creationdate" : -697724283,
-	"modificationdate" : -697459737,
-	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
+	"modificationdate" : -697459179,
+	"viewrect" : [ 25.0, 69.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -42,6 +42,11 @@
 			}
 ,
 			"calc_eg_level.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"mx7_oscillator~.model.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

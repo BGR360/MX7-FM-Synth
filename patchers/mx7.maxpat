@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 98.0, 740.0, 626.0 ],
+		"rect" : [ 380.0, 117.0, 689.0, 626.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -195,6 +195,7 @@
 , 			{
 				"box" : 				{
 					"annotation" : "none",
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -268,19 +269,6 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 182.75, 336.0, 50.0, 22.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 112.5, 376.0, 34.0, 22.0 ],
-					"style" : "",
-					"text" : "mtof"
 				}
 
 			}
@@ -517,7 +505,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-22", 0 ]
@@ -563,15 +551,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -602,13 +581,13 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "keyboard.module.maxpat",
-				"bootpath" : "~/Documents/Max 7/Modules",
+				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "keyboard.view.maxpat",
-				"bootpath" : "~/Documents/Max 7/Modules",
+				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -620,7 +599,7 @@
 			}
 , 			{
 				"name" : "keyboard.model.maxpat",
-				"bootpath" : "~/Documents/Max 7/Modules",
+				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -638,6 +617,12 @@
 			}
 , 			{
 				"name" : "calc_eg_level.maxpat",
+				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mx7_oscillator~.model.maxpat",
 				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
 				"type" : "JSON",
 				"implicit" : 1

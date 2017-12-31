@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 103.0, 79.0, 823.0, 675.0 ],
+		"rect" : [ 44.0, 79.0, 791.0, 675.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,8 +38,35 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"format" : 6,
+					"id" : "obj-21",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 110.5, 567.0, 76.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 110.5, 603.0, 194.0, 22.0 ],
+					"style" : "",
+					"text" : "j.send voice.1/op.*/osc/mod_depth"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"annotation" : "none",
-					"args" : [ "/voice.1/op.2" ],
+					"args" : [ "voice.1/op.2" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -62,7 +89,7 @@
 , 			{
 				"box" : 				{
 					"annotation" : "none",
-					"args" : [ "/voice.1/op.1" ],
+					"args" : [ "voice.1/op.1" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -91,7 +118,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 18.5, 419.0, 152.0, 22.0 ],
+					"patching_rect" : [ 18.5, 419.0, 151.0, 22.0 ],
 					"style" : "",
 					"text" : "mx7_voice~.model voice.1"
 				}
@@ -338,6 +365,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -385,8 +421,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-16" : [ "eg_rate2", "2", 0 ],
 			"obj-14::obj-53" : [ "osc_mode[1]", "Mode", 0 ],
+			"obj-1::obj-16" : [ "eg_rate2", "2", 0 ],
 			"obj-1::obj-20" : [ "eg_rate4", "4", 0 ],
 			"obj-1::obj-6" : [ "eg_rate1", "1", 0 ],
 			"obj-14::obj-37" : [ "freq_coarse[1]", "Freq Coarse", 0 ],
@@ -400,20 +436,20 @@
 			"obj-1::obj-53" : [ "osc_mode", "Mode", 0 ],
 			"obj-1::obj-37" : [ "freq_coarse", "Freq Coarse", 0 ],
 			"obj-14::obj-16" : [ "eg_rate2[1]", "2", 0 ],
-			"obj-1::obj-11" : [ "active", "active", 0 ],
 			"obj-14::obj-11" : [ "active[1]", "active", 0 ],
+			"obj-1::obj-11" : [ "active", "active", 0 ],
 			"obj-14::obj-6" : [ "eg_rate1[1]", "1", 0 ],
 			"obj-1::obj-26" : [ "eg_level3", "3", 0 ],
 			"obj-14::obj-20" : [ "eg_rate4[1]", "4", 0 ],
-			"obj-1::obj-18" : [ "eg_rate3", "3", 0 ],
 			"obj-14::obj-18" : [ "eg_rate3[1]", "3", 0 ],
+			"obj-1::obj-18" : [ "eg_rate3", "3", 0 ],
 			"obj-10::obj-15::obj-4" : [ "keys_enabled", "Keys Enabled", 0 ],
 			"obj-14::obj-43" : [ "freq_fine[1]", "Freq Fine", 0 ],
 			"obj-14::obj-7" : [ "output_level[1]", "Out Lvl", 0 ],
 			"obj-14::obj-28" : [ "eg_level4[1]", "4", 0 ],
 			"obj-5" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1::obj-24" : [ "eg_level2", "2", 0 ],
 			"obj-14::obj-26" : [ "eg_level3[1]", "3", 0 ],
+			"obj-1::obj-24" : [ "eg_level2", "2", 0 ],
 			"obj-1::obj-44" : [ "live.slider", "Detune", 0 ]
 		}
 ,

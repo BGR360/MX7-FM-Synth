@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 157.0, 104.0, 658.0, 564.0 ],
+		"rect" : [ 688.0, 156.0, 658.0, 564.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 290.0, 363.0, 217.0, 22.0 ],
+					"style" : "",
+					"text" : "j.parameter mod_depth @type decimal"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"color" : [ 0.989256, 0.417462, 0.031845, 1.0 ],
 					"id" : "obj-50",
@@ -166,7 +179,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 396.0, 338.0, 204.0, 47.0 ],
+					"patching_rect" : [ 386.0, 298.0, 204.0, 47.0 ],
 					"style" : "",
 					"text" : "In development, I need to fiddle with the maximum modulation depth. In production, it should never change."
 				}
@@ -228,19 +241,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 290.0, 363.0, 95.0, 22.0 ],
-					"style" : "",
-					"text" : "loadmess 1000."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -273,7 +273,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 290.0, 400.0, 50.0, 22.0 ],
+					"patching_rect" : [ 290.0, 400.0, 66.0, 22.0 ],
 					"style" : ""
 				}
 

@@ -2,7 +2,7 @@
 	"name" : "MX7 FM Synth",
 	"version" : 1,
 	"creationdate" : -697724283,
-	"modificationdate" : -697372145,
+	"modificationdate" : -697353406,
 	"viewrect" : [ 7.0, 63.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -16,32 +16,7 @@
 				"toplevel" : 1
 			}
 ,
-			"keyboard.module.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"keyboard.view.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"keyboard.model.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"mx7_voice~.model.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"mx7_operator~.model.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"mx7_operator~.view.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -62,6 +37,31 @@
 			}
 ,
 			"calc_eg_level.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"mx7_operator~.model.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"mx7_operator~.view.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"keyboard.model.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"keyboard.view.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"keyboard.module.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

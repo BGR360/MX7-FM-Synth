@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 305.0, 108.0, 640.0, 621.0 ],
+		"rect" : [ 305.0, 108.0, 564.0, 621.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -190,9 +190,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 35.000008, 443.133331, 44.0, 53.0 ],
+					"patching_rect" : [ 35.000008, 443.133331, 44.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.0, 150.0, 45.0, 53.0 ],
+					"presentation_rect" : [ 90.0, 150.0, 44.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.slider",
@@ -204,7 +204,6 @@
 
 					}
 ,
-					"triangle" : 1,
 					"varname" : "detune"
 				}
 
@@ -233,7 +232,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 196.0, 357.0, 31.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.0, 60.0, 45.0, 18.0 ],
+					"presentation_rect" : [ 90.0, 105.0, 45.0, 18.0 ],
 					"style" : "",
 					"text" : "Fine",
 					"textjustification" : 1
@@ -251,13 +250,13 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 152.833344, 357.0, 39.333332, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.0, 75.0, 45.0, 16.0 ],
+					"presentation_rect" : [ 90.0, 120.0, 45.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "freq_fine",
 							"parameter_shortname" : "Freq Fine",
 							"parameter_type" : 0,
-							"parameter_mmax" : 31.0,
+							"parameter_mmax" : 99.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_unitstyle" : 0
 						}
@@ -292,7 +291,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 78.166672, 355.5, 45.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.0, 105.0, 45.0, 18.0 ],
+					"presentation_rect" : [ 90.0, 60.0, 45.0, 18.0 ],
 					"style" : "",
 					"text" : "Coarse",
 					"textjustification" : 1
@@ -310,7 +309,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 35.000008, 357.0, 39.333332, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.0, 120.0, 45.0, 16.0 ],
+					"presentation_rect" : [ 90.0, 75.0, 45.0, 16.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "freq_coarse",
@@ -1114,20 +1113,20 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-16" : [ "eg_rate2", "2", 0 ],
-			"obj-20" : [ "eg_rate4", "4", 0 ],
-			"obj-6" : [ "eg_rate1", "1", 0 ],
-			"obj-22" : [ "eg_level1", "1", 0 ],
-			"obj-7" : [ "output_level", "Out Lvl", 0 ],
-			"obj-28" : [ "eg_level4", "4", 0 ],
 			"obj-43" : [ "freq_fine", "Freq Fine", 0 ],
-			"obj-53" : [ "osc_mode", "Mode", 0 ],
-			"obj-37" : [ "freq_coarse", "Freq Coarse", 0 ],
-			"obj-11" : [ "active", "active", 0 ],
-			"obj-26" : [ "eg_level3", "3", 0 ],
-			"obj-18" : [ "eg_rate3", "3", 0 ],
 			"obj-24" : [ "eg_level2", "2", 0 ],
-			"obj-44" : [ "live.slider", "Detune", 0 ]
+			"obj-22" : [ "eg_level1", "1", 0 ],
+			"obj-20" : [ "eg_rate4", "4", 0 ],
+			"obj-18" : [ "eg_rate3", "3", 0 ],
+			"obj-7" : [ "output_level", "Out Lvl", 0 ],
+			"obj-6" : [ "eg_rate1", "1", 0 ],
+			"obj-53" : [ "osc_mode", "Mode", 0 ],
+			"obj-11" : [ "active", "active", 0 ],
+			"obj-16" : [ "eg_rate2", "2", 0 ],
+			"obj-37" : [ "freq_coarse", "Freq Coarse", 0 ],
+			"obj-28" : [ "eg_level4", "4", 0 ],
+			"obj-44" : [ "live.slider", "Detune", 0 ],
+			"obj-26" : [ "eg_level3", "3", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

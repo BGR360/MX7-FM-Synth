@@ -2,9 +2,9 @@
 	"name" : "MX7 FM Synth",
 	"version" : 1,
 	"creationdate" : -697724283,
-	"modificationdate" : -697440045,
-	"viewrect" : [ 25.0, 69.0, 300.0, 500.0 ],
-	"autoorganize" : 1,
+	"modificationdate" : -697372205,
+	"viewrect" : [ 7.0, 63.0, 300.0, 500.0 ],
+	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
@@ -31,17 +31,12 @@
 				"local" : 1
 			}
 ,
+			"mx7_voice~.model.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"mx7_operator~.model.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"calc_eg_rate.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"calc_eg_level.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -56,12 +51,17 @@
 				"local" : 1
 			}
 ,
-			"mx7_operator~.view.maxpat" : 			{
+			"calc_eg_rate.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"mx7_voice~.model.maxpat" : 			{
+			"calc_eg_level.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"mx7_operator~.view.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 44.0, 79.0, 791.0, 675.0 ],
+		"rect" : [ 34.0, 79.0, 758.0, 675.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -118,7 +118,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 18.5, 419.0, 151.0, 22.0 ],
+					"patching_rect" : [ 18.5, 419.0, 152.0, 22.0 ],
 					"style" : "",
 					"text" : "mx7_voice~.model voice.1"
 				}
@@ -170,7 +170,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 150.5, 338.0, 29.5, 22.0 ],
+					"patching_rect" : [ 151.5, 338.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "0"
 				}
@@ -421,36 +421,36 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-14::obj-53" : [ "osc_mode[1]", "Mode", 0 ],
-			"obj-1::obj-16" : [ "eg_rate2", "2", 0 ],
-			"obj-1::obj-20" : [ "eg_rate4", "4", 0 ],
-			"obj-1::obj-6" : [ "eg_rate1", "1", 0 ],
-			"obj-14::obj-37" : [ "freq_coarse[1]", "Freq Coarse", 0 ],
-			"obj-14::obj-22" : [ "eg_level1[1]", "1", 0 ],
-			"obj-1::obj-22" : [ "eg_level1", "1", 0 ],
-			"obj-14::obj-24" : [ "eg_level2[1]", "2", 0 ],
-			"obj-1::obj-7" : [ "output_level", "Out Lvl", 0 ],
 			"obj-1::obj-43" : [ "freq_fine", "Freq Fine", 0 ],
-			"obj-1::obj-28" : [ "eg_level4", "4", 0 ],
-			"obj-14::obj-44" : [ "live.slider[1]", "Detune", 0 ],
-			"obj-1::obj-53" : [ "osc_mode", "Mode", 0 ],
-			"obj-1::obj-37" : [ "freq_coarse", "Freq Coarse", 0 ],
 			"obj-14::obj-16" : [ "eg_rate2[1]", "2", 0 ],
-			"obj-14::obj-11" : [ "active[1]", "active", 0 ],
-			"obj-1::obj-11" : [ "active", "active", 0 ],
-			"obj-14::obj-6" : [ "eg_rate1[1]", "1", 0 ],
-			"obj-1::obj-26" : [ "eg_level3", "3", 0 ],
-			"obj-14::obj-20" : [ "eg_rate4[1]", "4", 0 ],
-			"obj-14::obj-18" : [ "eg_rate3[1]", "3", 0 ],
-			"obj-1::obj-18" : [ "eg_rate3", "3", 0 ],
-			"obj-10::obj-15::obj-4" : [ "keys_enabled", "Keys Enabled", 0 ],
-			"obj-14::obj-43" : [ "freq_fine[1]", "Freq Fine", 0 ],
-			"obj-14::obj-7" : [ "output_level[1]", "Out Lvl", 0 ],
-			"obj-14::obj-28" : [ "eg_level4[1]", "4", 0 ],
-			"obj-5" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-14::obj-26" : [ "eg_level3[1]", "3", 0 ],
+			"obj-14::obj-24" : [ "eg_level2[1]", "2", 0 ],
+			"obj-14::obj-53" : [ "osc_mode[1]", "Mode", 0 ],
 			"obj-1::obj-24" : [ "eg_level2", "2", 0 ],
-			"obj-1::obj-44" : [ "live.slider", "Detune", 0 ]
+			"obj-1::obj-22" : [ "eg_level1", "1", 0 ],
+			"obj-1::obj-20" : [ "eg_rate4", "4", 0 ],
+			"obj-1::obj-18" : [ "eg_rate3", "3", 0 ],
+			"obj-1::obj-7" : [ "output_level", "Out Lvl", 0 ],
+			"obj-1::obj-6" : [ "eg_rate1", "1", 0 ],
+			"obj-14::obj-22" : [ "eg_level1[1]", "1", 0 ],
+			"obj-14::obj-43" : [ "freq_fine[1]", "Freq Fine", 0 ],
+			"obj-14::obj-28" : [ "eg_level4[1]", "4", 0 ],
+			"obj-1::obj-11" : [ "active", "active", 0 ],
+			"obj-1::obj-53" : [ "osc_mode", "Mode", 0 ],
+			"obj-1::obj-16" : [ "eg_rate2", "2", 0 ],
+			"obj-1::obj-37" : [ "freq_coarse", "Freq Coarse", 0 ],
+			"obj-14::obj-44" : [ "live.slider[1]", "Detune", 0 ],
+			"obj-14::obj-20" : [ "eg_rate4[1]", "4", 0 ],
+			"obj-14::obj-11" : [ "active[1]", "active", 0 ],
+			"obj-10::obj-15::obj-4" : [ "keys_enabled", "Keys Enabled", 0 ],
+			"obj-1::obj-28" : [ "eg_level4", "4", 0 ],
+			"obj-14::obj-6" : [ "eg_rate1[1]", "1", 0 ],
+			"obj-14::obj-7" : [ "output_level[1]", "Out Lvl", 0 ],
+			"obj-14::obj-26" : [ "eg_level3[1]", "3", 0 ],
+			"obj-5" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1::obj-44" : [ "live.slider", "Detune", 0 ],
+			"obj-14::obj-37" : [ "freq_coarse[1]", "Freq Coarse", 0 ],
+			"obj-1::obj-26" : [ "eg_level3", "3", 0 ],
+			"obj-14::obj-18" : [ "eg_rate3[1]", "3", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -569,6 +569,10 @@
 			}
 , 			{
 				"name" : "j.receive~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
 , 			{

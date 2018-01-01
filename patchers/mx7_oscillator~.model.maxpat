@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 688.0, 156.0, 658.0, 564.0 ],
+		"rect" : [ 588.0, 162.0, 658.0, 564.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -800,7 +800,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 360.0, 79.0, 579.0, 627.0 ],
+										"rect" : [ 667.0, 87.0, 579.0, 627.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -828,6 +828,18 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-12",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 75.0, 536.0, 255.0, 20.0 ],
+													"style" : "",
+													"text" : "1. makes it so that it doesn't snap to values"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-7",
 													"linecount" : 7,
@@ -958,9 +970,9 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 26.0, 535.0, 34.0, 22.0 ],
+													"patching_rect" : [ 26.0, 535.0, 47.0, 22.0 ],
 													"style" : "",
-													"text" : "ftom"
+													"text" : "ftom 1."
 												}
 
 											}

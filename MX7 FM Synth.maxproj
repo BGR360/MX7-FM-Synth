@@ -2,7 +2,7 @@
 	"name" : "MX7 FM Synth",
 	"version" : 1,
 	"creationdate" : -697724283,
-	"modificationdate" : -697353406,
+	"modificationdate" : -697352028,
 	"viewrect" : [ 7.0, 63.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -62,6 +62,11 @@
 			}
 ,
 			"keyboard.module.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"mx7~.model.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

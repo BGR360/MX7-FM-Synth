@@ -212,7 +212,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 116.0, 1084.0, 76.0, 22.0 ],
+					"patching_rect" : [ 116.0, 1130.0, 76.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -224,7 +224,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 116.0, 1120.0, 194.0, 22.0 ],
+					"patching_rect" : [ 116.0, 1166.0, 194.0, 22.0 ],
 					"style" : "",
 					"text" : "j.send voice.1/op.*/osc/mod_depth"
 				}
@@ -256,7 +256,7 @@
 , 			{
 				"box" : 				{
 					"annotation" : "none",
-					"args" : [ "voice.1/op.1" ],
+					"args" : [ "mx7_voice~.1/op.1" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -278,21 +278,6 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "none",
-					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"id" : "obj-9",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 24.0, 974.0, 152.0, 22.0 ],
-					"style" : "",
-					"text" : "mx7_voice~.model voice.1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "live.gain~",
 					"numinlets" : 2,
@@ -300,7 +285,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 24.0, 1021.0, 137.0, 48.0 ],
+					"patching_rect" : [ 24.0, 1067.0, 137.0, 48.0 ],
 					"presentation_rect" : [ 0.0, 0.0, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -325,7 +310,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 1093.0, 49.0, 49.0 ],
+					"patching_rect" : [ 24.0, 1139.0, 49.0, 49.0 ],
 					"style" : ""
 				}
 
@@ -391,15 +376,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -461,26 +437,6 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 0,
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 1,
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
  ],
 		"parameters" : 		{
 			"obj-1::obj-11" : [ "active[1]", "active", 0 ],
@@ -494,12 +450,12 @@
 			"obj-26::obj-18" : [ "eg_rate3[4]", "3", 0 ],
 			"obj-26::obj-11" : [ "active[4]", "active", 0 ],
 			"obj-26::obj-44" : [ "live.slider[4]", "Detune", 0 ],
-			"obj-1::obj-18" : [ "eg_rate3[1]", "3", 0 ],
 			"obj-27::obj-53" : [ "osc_mode[5]", "Mode", 0 ],
-			"obj-1::obj-16" : [ "eg_rate2[1]", "2", 0 ],
+			"obj-1::obj-18" : [ "eg_rate3[1]", "3", 0 ],
 			"obj-27::obj-11" : [ "active[5]", "active", 0 ],
-			"obj-1::obj-26" : [ "eg_level3[1]", "3", 0 ],
+			"obj-1::obj-16" : [ "eg_rate2[1]", "2", 0 ],
 			"obj-27::obj-22" : [ "eg_level1[5]", "1", 0 ],
+			"obj-1::obj-26" : [ "eg_level3[1]", "3", 0 ],
 			"obj-14::obj-20" : [ "eg_rate4", "4", 0 ],
 			"obj-7::obj-22" : [ "eg_level1[2]", "1", 0 ],
 			"obj-7::obj-26" : [ "eg_level3[2]", "3", 0 ],
@@ -513,11 +469,11 @@
 			"obj-26::obj-28" : [ "eg_level4[4]", "4", 0 ],
 			"obj-15::obj-4" : [ "keys_enabled", "Keys Enabled", 0 ],
 			"obj-27::obj-24" : [ "eg_level2[5]", "2", 0 ],
-			"obj-1::obj-6" : [ "eg_rate1[1]", "1", 0 ],
 			"obj-14::obj-53" : [ "osc_mode", "Mode", 0 ],
 			"obj-27::obj-43" : [ "freq_fine[5]", "Freq Fine", 0 ],
-			"obj-1::obj-37" : [ "freq_coarse[1]", "Freq Coarse", 0 ],
+			"obj-1::obj-6" : [ "eg_rate1[1]", "1", 0 ],
 			"obj-27::obj-16" : [ "eg_rate2[5]", "2", 0 ],
+			"obj-1::obj-37" : [ "freq_coarse[1]", "Freq Coarse", 0 ],
 			"obj-7::obj-7" : [ "output_level[2]", "Out Lvl", 0 ],
 			"obj-14::obj-18" : [ "eg_rate3", "3", 0 ],
 			"obj-7::obj-16" : [ "eg_rate2[2]", "2", 0 ],
@@ -532,12 +488,12 @@
 			"obj-26::obj-37" : [ "freq_coarse[4]", "Freq Coarse", 0 ],
 			"obj-14::obj-26" : [ "eg_level3", "3", 0 ],
 			"obj-26::obj-53" : [ "osc_mode[4]", "Mode", 0 ],
-			"obj-1::obj-53" : [ "osc_mode[1]", "Mode", 0 ],
 			"obj-27::obj-20" : [ "eg_rate4[5]", "4", 0 ],
-			"obj-1::obj-7" : [ "output_level[1]", "Out Lvl", 0 ],
+			"obj-1::obj-53" : [ "osc_mode[1]", "Mode", 0 ],
 			"obj-27::obj-37" : [ "freq_coarse[5]", "Freq Coarse", 0 ],
-			"obj-1::obj-24" : [ "eg_level2[1]", "2", 0 ],
+			"obj-1::obj-7" : [ "output_level[1]", "Out Lvl", 0 ],
 			"obj-27::obj-28" : [ "eg_level4[5]", "4", 0 ],
+			"obj-1::obj-24" : [ "eg_level2[1]", "2", 0 ],
 			"obj-7::obj-44" : [ "live.slider[2]", "Detune", 0 ],
 			"obj-7::obj-28" : [ "eg_level4[2]", "4", 0 ],
 			"obj-7::obj-53" : [ "osc_mode[2]", "Mode", 0 ],
@@ -550,11 +506,11 @@
 			"obj-26::obj-26" : [ "eg_level3[4]", "3", 0 ],
 			"obj-26::obj-22" : [ "eg_level1[4]", "1", 0 ],
 			"obj-26::obj-16" : [ "eg_rate2[4]", "2", 0 ],
-			"obj-1::obj-44" : [ "live.slider[1]", "Detune", 0 ],
 			"obj-14::obj-24" : [ "eg_level2", "2", 0 ],
 			"obj-27::obj-6" : [ "eg_rate1[5]", "1", 0 ],
-			"obj-1::obj-43" : [ "freq_fine[1]", "Freq Fine", 0 ],
+			"obj-1::obj-44" : [ "live.slider[1]", "Detune", 0 ],
 			"obj-27::obj-26" : [ "eg_level3[5]", "3", 0 ],
+			"obj-1::obj-43" : [ "freq_fine[1]", "Freq Fine", 0 ],
 			"obj-1::obj-22" : [ "eg_level1[1]", "1", 0 ],
 			"obj-7::obj-18" : [ "eg_rate3[2]", "3", 0 ],
 			"obj-7::obj-43" : [ "freq_fine[2]", "Freq Fine", 0 ],
@@ -564,50 +520,14 @@
 			"obj-26::obj-20" : [ "eg_rate4[4]", "4", 0 ],
 			"obj-26::obj-6" : [ "eg_rate1[4]", "1", 0 ],
 			"obj-27::obj-7" : [ "output_level[5]", "Out Lvl", 0 ],
-			"obj-1::obj-20" : [ "eg_rate4[1]", "4", 0 ],
 			"obj-27::obj-18" : [ "eg_rate3[5]", "3", 0 ],
-			"obj-1::obj-28" : [ "eg_level4[1]", "4", 0 ],
+			"obj-1::obj-20" : [ "eg_rate4[1]", "4", 0 ],
 			"obj-14::obj-22" : [ "eg_level1", "1", 0 ],
-			"obj-27::obj-44" : [ "live.slider[5]", "Detune", 0 ]
+			"obj-27::obj-44" : [ "live.slider[5]", "Detune", 0 ],
+			"obj-1::obj-28" : [ "eg_level4[1]", "4", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "mx7_voice~.model.maxpat",
-				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mx7_operator~.model.maxpat",
-				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mx7_oscillator~.model.maxpat",
-				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mx7_envelope~.model.maxpat",
-				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "calc_eg_rate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "calc_eg_level.maxpat",
-				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "mx7_operator~.view.maxpat",
 				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
 				"type" : "JSON",
@@ -632,50 +552,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.in.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.parameter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.in~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.out~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.return.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "j.view.mxo",
 				"type" : "iLaX"
 			}
@@ -688,7 +564,23 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "j.message.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
 				"type" : "iLaX"
 			}
 , 			{

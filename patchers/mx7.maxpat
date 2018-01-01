@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 758.0, 675.0 ],
+		"rect" : [ 34.0, 79.0, 837.0, 675.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,160 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "none",
+					"args" : [ "voice.1/op.6" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-27",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mx7_operator~.view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 476.0, 629.0, 450.0, 210.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 450.0, 210.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
+					"args" : [ "voice.1/op.5" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-26",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mx7_operator~.view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 24.0, 629.0, 450.0, 210.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 450.0, 210.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 99.0, 928.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 24.0, 928.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-15",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "keyboard.view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 510.0, 31.0, 300.0, 140.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 300.0, 140.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 24.0, 887.0, 319.0, 22.0 ],
+					"style" : "",
+					"text" : "keyboard.model"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
+					"args" : [ "voice.1/op.4" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-11",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mx7_operator~.view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 476.0, 417.0, 450.0, 210.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 450.0, 210.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
+					"args" : [ "voice.1/op.3" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-7",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mx7_operator~.view.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 24.0, 417.0, 450.0, 210.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 450.0, 210.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"format" : 6,
 					"id" : "obj-21",
 					"maxclass" : "flonum",
@@ -45,7 +199,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 110.5, 567.0, 76.0, 22.0 ],
+					"patching_rect" : [ 116.0, 1084.0, 76.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -57,7 +211,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 110.5, 603.0, 194.0, 22.0 ],
+					"patching_rect" : [ 116.0, 1120.0, 194.0, 22.0 ],
 					"style" : "",
 					"text" : "j.send voice.1/op.*/osc/mod_depth"
 				}
@@ -80,7 +234,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 350.0, 397.0, 450.0, 210.0 ],
+					"patching_rect" : [ 476.0, 205.0, 450.0, 210.0 ],
 					"presentation_rect" : [ 352.0, 397.0, 450.0, 210.0 ],
 					"viewvisibility" : 1
 				}
@@ -103,7 +257,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 350.0, 185.0, 450.0, 210.0 ],
+					"patching_rect" : [ 24.0, 205.0, 450.0, 210.0 ],
 					"presentation_rect" : [ 0.0, 0.0, 450.0, 210.0 ],
 					"viewvisibility" : 1
 				}
@@ -118,74 +272,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 18.5, 419.0, 152.0, 22.0 ],
+					"patching_rect" : [ 24.0, 974.0, 152.0, 22.0 ],
 					"style" : "",
 					"text" : "mx7_voice~.model voice.1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 18.5, 338.0, 50.0, 22.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-19",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 88.75, 378.0, 29.5, 22.0 ],
-					"style" : "",
-					"text" : "> 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 186.0, 338.0, 29.5, 22.0 ],
-					"style" : "",
-					"text" : "1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 151.5, 338.0, 29.5, 22.0 ],
-					"style" : "",
-					"text" : "0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 88.75, 338.0, 50.0, 22.0 ],
-					"style" : ""
 				}
 
 			}
@@ -198,7 +287,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 18.5, 503.0, 137.0, 48.0 ],
+					"patching_rect" : [ 24.0, 1020.0, 137.0, 48.0 ],
 					"presentation_rect" : [ 0.0, 0.0, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -223,30 +312,8 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.5, 576.0, 49.0, 49.0 ],
+					"patching_rect" : [ 24.0, 1093.0, 49.0, 49.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "keyboard" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-10",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "keyboard.module.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 5,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 18.5, 185.0, 300.0, 140.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 300.0, 140.0 ],
-					"viewvisibility" : 1
 				}
 
 			}
@@ -256,7 +323,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 158.5, 106.0, 208.0, 20.0 ],
+					"patching_rect" : [ 145.0, 106.0, 208.0, 20.0 ],
 					"style" : "",
 					"text" : "Built using Max/MSP and Jamoma",
 					"textjustification" : 1
@@ -270,7 +337,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 187.5, 132.0, 150.0, 33.0 ],
+					"patching_rect" : [ 174.0, 132.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "Designed by Ben Reeves\nCopyright 2018",
 					"textjustification" : 1
@@ -286,7 +353,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 92.0, 54.0, 341.0, 42.0 ],
+					"patching_rect" : [ 78.5, 54.0, 341.0, 42.0 ],
 					"style" : "",
 					"text" : "Based on the Korg Volca FM, which in turn is based on the Yamaha DX7.",
 					"textjustification" : 1
@@ -301,7 +368,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 16.0, 461.0, 33.0 ],
+					"patching_rect" : [ 18.5, 16.0, 461.0, 33.0 ],
 					"style" : "",
 					"text" : "MX7 6-Operator FM Synthesizer",
 					"textjustification" : 1
@@ -311,55 +378,28 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-10", 1 ]
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
+					"destination" : [ "obj-23", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-10", 0 ]
+					"source" : [ "obj-12", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 1 ],
+					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -374,10 +414,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-9", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-22", 0 ]
+					"source" : [ "obj-23", 0 ]
 				}
 
 			}
@@ -421,63 +461,95 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-43" : [ "freq_fine", "Freq Fine", 0 ],
-			"obj-14::obj-16" : [ "eg_rate2[1]", "2", 0 ],
-			"obj-14::obj-24" : [ "eg_level2[1]", "2", 0 ],
-			"obj-14::obj-53" : [ "osc_mode[1]", "Mode", 0 ],
-			"obj-1::obj-24" : [ "eg_level2", "2", 0 ],
-			"obj-1::obj-22" : [ "eg_level1", "1", 0 ],
-			"obj-1::obj-20" : [ "eg_rate4", "4", 0 ],
-			"obj-1::obj-18" : [ "eg_rate3", "3", 0 ],
-			"obj-1::obj-7" : [ "output_level", "Out Lvl", 0 ],
-			"obj-1::obj-6" : [ "eg_rate1", "1", 0 ],
-			"obj-14::obj-22" : [ "eg_level1[1]", "1", 0 ],
-			"obj-14::obj-43" : [ "freq_fine[1]", "Freq Fine", 0 ],
-			"obj-14::obj-28" : [ "eg_level4[1]", "4", 0 ],
-			"obj-1::obj-11" : [ "active", "active", 0 ],
-			"obj-1::obj-53" : [ "osc_mode", "Mode", 0 ],
-			"obj-1::obj-16" : [ "eg_rate2", "2", 0 ],
-			"obj-1::obj-37" : [ "freq_coarse", "Freq Coarse", 0 ],
-			"obj-14::obj-44" : [ "live.slider[1]", "Detune", 0 ],
-			"obj-14::obj-20" : [ "eg_rate4[1]", "4", 0 ],
-			"obj-14::obj-11" : [ "active[1]", "active", 0 ],
-			"obj-10::obj-15::obj-4" : [ "keys_enabled", "Keys Enabled", 0 ],
-			"obj-1::obj-28" : [ "eg_level4", "4", 0 ],
-			"obj-14::obj-6" : [ "eg_rate1[1]", "1", 0 ],
-			"obj-14::obj-7" : [ "output_level[1]", "Out Lvl", 0 ],
-			"obj-14::obj-26" : [ "eg_level3[1]", "3", 0 ],
+			"obj-26::obj-24" : [ "eg_level2[4]", "2", 0 ],
+			"obj-27::obj-44" : [ "live.slider[5]", "Detune", 0 ],
+			"obj-11::obj-43" : [ "freq_fine[3]", "Freq Fine", 0 ],
+			"obj-7::obj-37" : [ "freq_coarse[2]", "Freq Coarse", 0 ],
+			"obj-14::obj-43" : [ "freq_fine", "Freq Fine", 0 ],
+			"obj-1::obj-16" : [ "eg_rate2[1]", "2", 0 ],
+			"obj-26::obj-22" : [ "eg_level1[4]", "1", 0 ],
+			"obj-1::obj-24" : [ "eg_level2[1]", "2", 0 ],
+			"obj-7::obj-20" : [ "eg_rate4[2]", "4", 0 ],
+			"obj-1::obj-53" : [ "osc_mode[1]", "Mode", 0 ],
+			"obj-11::obj-7" : [ "output_level[3]", "Out Lvl", 0 ],
+			"obj-14::obj-24" : [ "eg_level2", "2", 0 ],
+			"obj-11::obj-6" : [ "eg_rate1[3]", "1", 0 ],
+			"obj-14::obj-22" : [ "eg_level1", "1", 0 ],
+			"obj-26::obj-11" : [ "active[4]", "active", 0 ],
+			"obj-14::obj-20" : [ "eg_rate4", "4", 0 ],
+			"obj-7::obj-7" : [ "output_level[2]", "Out Lvl", 0 ],
+			"obj-14::obj-18" : [ "eg_rate3", "3", 0 ],
+			"obj-27::obj-53" : [ "osc_mode[5]", "Mode", 0 ],
+			"obj-11::obj-44" : [ "live.slider[3]", "Detune", 0 ],
+			"obj-27::obj-18" : [ "eg_rate3[5]", "3", 0 ],
+			"obj-7::obj-43" : [ "freq_fine[2]", "Freq Fine", 0 ],
+			"obj-27::obj-16" : [ "eg_rate2[5]", "2", 0 ],
+			"obj-14::obj-7" : [ "output_level", "Out Lvl", 0 ],
+			"obj-27::obj-11" : [ "active[5]", "active", 0 ],
+			"obj-27::obj-22" : [ "eg_level1[5]", "1", 0 ],
+			"obj-14::obj-6" : [ "eg_rate1", "1", 0 ],
+			"obj-27::obj-20" : [ "eg_rate4[5]", "4", 0 ],
+			"obj-27::obj-7" : [ "output_level[5]", "Out Lvl", 0 ],
+			"obj-11::obj-24" : [ "eg_level2[3]", "2", 0 ],
+			"obj-27::obj-6" : [ "eg_rate1[5]", "1", 0 ],
+			"obj-1::obj-22" : [ "eg_level1[1]", "1", 0 ],
+			"obj-7::obj-22" : [ "eg_level1[2]", "1", 0 ],
+			"obj-26::obj-44" : [ "live.slider[4]", "Detune", 0 ],
+			"obj-1::obj-43" : [ "freq_fine[1]", "Freq Fine", 0 ],
+			"obj-11::obj-11" : [ "active[3]", "active", 0 ],
+			"obj-26::obj-43" : [ "freq_fine[4]", "Freq Fine", 0 ],
+			"obj-1::obj-28" : [ "eg_level4[1]", "4", 0 ],
+			"obj-26::obj-16" : [ "eg_rate2[4]", "2", 0 ],
+			"obj-7::obj-11" : [ "active[2]", "active", 0 ],
+			"obj-14::obj-11" : [ "active", "active", 0 ],
+			"obj-14::obj-53" : [ "osc_mode", "Mode", 0 ],
+			"obj-11::obj-53" : [ "osc_mode[3]", "Mode", 0 ],
+			"obj-14::obj-16" : [ "eg_rate2", "2", 0 ],
+			"obj-7::obj-44" : [ "live.slider[2]", "Detune", 0 ],
+			"obj-27::obj-24" : [ "eg_level2[5]", "2", 0 ],
+			"obj-11::obj-22" : [ "eg_level1[3]", "1", 0 ],
+			"obj-11::obj-26" : [ "eg_level3[3]", "3", 0 ],
+			"obj-11::obj-20" : [ "eg_rate4[3]", "4", 0 ],
+			"obj-14::obj-37" : [ "freq_coarse", "Freq Coarse", 0 ],
+			"obj-7::obj-24" : [ "eg_level2[2]", "2", 0 ],
+			"obj-11::obj-18" : [ "eg_rate3[3]", "3", 0 ],
+			"obj-1::obj-44" : [ "live.slider[1]", "Detune", 0 ],
+			"obj-11::obj-16" : [ "eg_rate2[3]", "2", 0 ],
+			"obj-1::obj-20" : [ "eg_rate4[1]", "4", 0 ],
+			"obj-1::obj-11" : [ "active[1]", "active", 0 ],
+			"obj-26::obj-18" : [ "eg_rate3[4]", "3", 0 ],
+			"obj-7::obj-16" : [ "eg_rate2[2]", "2", 0 ],
+			"obj-15::obj-4" : [ "keys_enabled", "Keys Enabled", 0 ],
+			"obj-7::obj-53" : [ "osc_mode[2]", "Mode", 0 ],
+			"obj-27::obj-26" : [ "eg_level3[5]", "3", 0 ],
+			"obj-11::obj-28" : [ "eg_level4[3]", "4", 0 ],
+			"obj-7::obj-26" : [ "eg_level3[2]", "3", 0 ],
+			"obj-1::obj-6" : [ "eg_rate1[1]", "1", 0 ],
+			"obj-14::obj-28" : [ "eg_level4", "4", 0 ],
+			"obj-1::obj-7" : [ "output_level[1]", "Out Lvl", 0 ],
+			"obj-1::obj-26" : [ "eg_level3[1]", "3", 0 ],
+			"obj-7::obj-18" : [ "eg_rate3[2]", "3", 0 ],
+			"obj-26::obj-6" : [ "eg_rate1[4]", "1", 0 ],
+			"obj-27::obj-28" : [ "eg_level4[5]", "4", 0 ],
+			"obj-27::obj-43" : [ "freq_fine[5]", "Freq Fine", 0 ],
+			"obj-11::obj-37" : [ "freq_coarse[3]", "Freq Coarse", 0 ],
+			"obj-7::obj-28" : [ "eg_level4[2]", "4", 0 ],
 			"obj-5" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1::obj-44" : [ "live.slider", "Detune", 0 ],
-			"obj-14::obj-37" : [ "freq_coarse[1]", "Freq Coarse", 0 ],
-			"obj-1::obj-26" : [ "eg_level3", "3", 0 ],
-			"obj-14::obj-18" : [ "eg_rate3[1]", "3", 0 ]
+			"obj-1::obj-37" : [ "freq_coarse[1]", "Freq Coarse", 0 ],
+			"obj-14::obj-44" : [ "live.slider", "Detune", 0 ],
+			"obj-26::obj-20" : [ "eg_rate4[4]", "4", 0 ],
+			"obj-1::obj-18" : [ "eg_rate3[1]", "3", 0 ],
+			"obj-14::obj-26" : [ "eg_level3", "3", 0 ],
+			"obj-26::obj-53" : [ "osc_mode[4]", "Mode", 0 ],
+			"obj-26::obj-37" : [ "freq_coarse[4]", "Freq Coarse", 0 ],
+			"obj-26::obj-7" : [ "output_level[4]", "Out Lvl", 0 ],
+			"obj-26::obj-28" : [ "eg_level4[4]", "4", 0 ],
+			"obj-7::obj-6" : [ "eg_rate1[2]", "1", 0 ],
+			"obj-26::obj-26" : [ "eg_level3[4]", "3", 0 ],
+			"obj-27::obj-37" : [ "freq_coarse[5]", "Freq Coarse", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "keyboard.module.maxpat",
-				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "keyboard.view.maxpat",
-				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "keyboard.model.maxpat",
-				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "mx7_voice~.model.maxpat",
 				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
 				"type" : "JSON",
@@ -520,43 +592,33 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.ui.mxo",
-				"type" : "iLaX"
+				"name" : "keyboard.model.maxpat",
+				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
-				"name" : "j.view.mxo",
-				"type" : "iLaX"
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
+				"name" : "keyboard.view.maxpat",
+				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "j.model.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.message.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.out.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "j.in.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -565,6 +627,10 @@
 			}
 , 			{
 				"name" : "j.out~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -577,6 +643,30 @@
 			}
 , 			{
 				"name" : "j.send~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.ui.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.message.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.out.mxo",
 				"type" : "iLaX"
 			}
  ],

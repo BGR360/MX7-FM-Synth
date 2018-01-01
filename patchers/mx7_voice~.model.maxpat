@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 100.0, 210.0, 847.0, 508.0 ],
+		"rect" : [ 258.0, 126.0, 847.0, 612.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,11 +38,202 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 582.0, 191.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 547.0, 149.0, 29.5, 22.0 ],
+					"style" : "",
+					"text" : "> 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.989256, 0.417462, 0.031845, 1.0 ],
+					"id" : "obj-26",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "signal", "", "" ],
+					"patching_rect" : [ 280.0, 376.0, 121.0, 35.0 ],
+					"style" : "",
+					"text" : "j.receive~ op.5/audio/out.output"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.989256, 0.417462, 0.031845, 1.0 ],
+					"id" : "obj-25",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "signal", "", "" ],
+					"patching_rect" : [ 145.0, 376.0, 124.0, 35.0 ],
+					"style" : "",
+					"text" : "j.receive~ op.4/audio/out.output"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.989256, 0.417462, 0.031845, 1.0 ],
+					"id" : "obj-24",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 452.0, 294.0, 134.0, 35.0 ],
+					"style" : "",
+					"text" : "j.send~ op.5/audio/in.freq_mod"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.989256, 0.417462, 0.031845, 1.0 ],
+					"id" : "obj-22",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 308.0, 294.0, 133.0, 35.0 ],
+					"style" : "",
+					"text" : "j.send~ op.4/audio/in.freq_mod"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.989256, 0.417462, 0.031845, 1.0 ],
+					"id" : "obj-23",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "signal", "", "" ],
+					"patching_rect" : [ 308.0, 239.0, 125.0, 35.0 ],
+					"style" : "",
+					"text" : "j.receive~ op.6/audio/out.output"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.989256, 0.417462, 0.031845, 1.0 ],
+					"id" : "obj-20",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 159.0, 294.0, 133.0, 35.0 ],
+					"style" : "",
+					"text" : "j.send~ op.2/audio/in.freq_mod"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.989256, 0.417462, 0.031845, 1.0 ],
+					"id" : "obj-21",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "signal", "", "" ],
+					"patching_rect" : [ 159.0, 239.0, 126.0, 35.0 ],
+					"style" : "",
+					"text" : "j.receive~ op.3/audio/out.output"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"patching_rect" : [ 178.0, 179.0, 154.0, 22.0 ],
+					"style" : "",
+					"text" : "mx7_operator~.model op.6"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"patching_rect" : [ 178.0, 149.0, 154.0, 22.0 ],
+					"style" : "",
+					"text" : "mx7_operator~.model op.5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"patching_rect" : [ 178.0, 121.0, 154.0, 22.0 ],
+					"style" : "",
+					"text" : "mx7_operator~.model op.4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "none",
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"patching_rect" : [ 11.0, 179.0, 154.0, 22.0 ],
+					"style" : "",
+					"text" : "mx7_operator~.model op.3"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 185.5, 430.5, 230.0, 95.0 ],
+					"patching_rect" : [ 133.5, 511.5, 230.0, 95.0 ],
 					"style" : ""
 				}
 
@@ -51,7 +242,7 @@
 				"box" : 				{
 					"comment" : "(signal) audio out",
 					"id" : "obj-19",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -69,7 +260,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 547.0, 179.0, 99.0, 35.0 ],
+					"patching_rect" : [ 547.0, 225.0, 99.0, 35.0 ],
 					"style" : "",
 					"text" : "j.send op.*/data/in.gate"
 				}
@@ -113,7 +304,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
-					"patching_rect" : [ 11.0, 229.0, 124.0, 35.0 ],
+					"patching_rect" : [ 11.0, 376.0, 124.0, 35.0 ],
 					"style" : "",
 					"text" : "j.receive~ op.1/audio/out.output"
 				}
@@ -128,7 +319,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 161.0, 284.0, 134.0, 35.0 ],
+					"patching_rect" : [ 11.0, 294.0, 134.0, 35.0 ],
 					"style" : "",
 					"text" : "j.send~ op.1/audio/in.freq_mod"
 				}
@@ -143,7 +334,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
-					"patching_rect" : [ 161.0, 229.0, 122.0, 35.0 ],
+					"patching_rect" : [ 11.0, 239.0, 122.0, 35.0 ],
 					"style" : "",
 					"text" : "j.receive~ op.2/audio/out.output"
 				}
@@ -187,7 +378,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 547.0, 143.0, 24.0, 24.0 ],
+					"patching_rect" : [ 547.0, 190.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -222,7 +413,7 @@
 				"box" : 				{
 					"comment" : "(bool) gate in",
 					"id" : "obj-41",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -263,7 +454,7 @@
 				"box" : 				{
 					"comment" : "(float) played key freq (midi)",
 					"id" : "obj-35",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -277,7 +468,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -381,6 +572,73 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 1,
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 0,
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 0,
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 1,
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -408,7 +666,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-47", 0 ],
+					"destination" : [ "obj-27", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-44", 0 ]
@@ -433,7 +691,79 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "mx7_operator~.model.maxpat",
+				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mx7_oscillator~.model.maxpat",
+				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mx7_envelope~.model.maxpat",
+				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "calc_eg_rate.maxpat",
+				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "calc_eg_level.maxpat",
+				"bootpath" : "~/Documents/Max 7/Projects/MX7 FM Synth/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.in.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.in~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.out~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.unit.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

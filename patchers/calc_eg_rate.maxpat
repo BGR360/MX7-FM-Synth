@@ -84,9 +84,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 132.0, 165.0, 22.0 ],
+					"patching_rect" : [ 30.0, 131.0, 165.0, 22.0 ],
 					"style" : "",
-					"text" : "expr 120000 * pow(0.89\\, $i1)"
+					"text" : "expr 100000 * pow(0.91\\, $i1)"
 				}
 
 			}

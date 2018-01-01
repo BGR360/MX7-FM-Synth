@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 24.0, 938.0, 94.0, 22.0 ],
+					"style" : "",
+					"text" : "pack"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"annotation" : "none",
 					"args" : [ "voice.1/op.6" ],
 					"bgmode" : 0,
@@ -90,7 +103,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 99.0, 928.0, 50.0, 22.0 ],
+					"patching_rect" : [ 99.0, 895.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -103,7 +116,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 24.0, 928.0, 50.0, 22.0 ],
+					"patching_rect" : [ 24.0, 895.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -138,7 +151,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 24.0, 887.0, 319.0, 22.0 ],
+					"patching_rect" : [ 24.0, 862.0, 319.0, 22.0 ],
 					"style" : "",
 					"text" : "keyboard.model"
 				}
@@ -269,7 +282,7 @@
 					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"id" : "obj-9",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 24.0, 974.0, 152.0, 22.0 ],
@@ -287,7 +300,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 24.0, 1020.0, 137.0, 48.0 ],
+					"patching_rect" : [ 24.0, 1021.0, 137.0, 48.0 ],
 					"presentation_rect" : [ 0.0, 0.0, 50.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -378,6 +391,15 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -396,7 +418,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-17", 0 ]
@@ -414,7 +436,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 1 ],
+					"destination" : [ "obj-10", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-23", 0 ]
@@ -461,92 +483,92 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-26::obj-24" : [ "eg_level2[4]", "2", 0 ],
-			"obj-27::obj-44" : [ "live.slider[5]", "Detune", 0 ],
-			"obj-11::obj-43" : [ "freq_fine[3]", "Freq Fine", 0 ],
+			"obj-1::obj-11" : [ "active[1]", "active", 0 ],
 			"obj-7::obj-37" : [ "freq_coarse[2]", "Freq Coarse", 0 ],
+			"obj-7::obj-6" : [ "eg_rate1[2]", "1", 0 ],
+			"obj-11::obj-44" : [ "live.slider[3]", "Detune", 0 ],
 			"obj-14::obj-43" : [ "freq_fine", "Freq Fine", 0 ],
-			"obj-1::obj-16" : [ "eg_rate2[1]", "2", 0 ],
-			"obj-26::obj-22" : [ "eg_level1[4]", "1", 0 ],
-			"obj-1::obj-24" : [ "eg_level2[1]", "2", 0 ],
-			"obj-7::obj-20" : [ "eg_rate4[2]", "4", 0 ],
-			"obj-1::obj-53" : [ "osc_mode[1]", "Mode", 0 ],
-			"obj-11::obj-7" : [ "output_level[3]", "Out Lvl", 0 ],
-			"obj-14::obj-24" : [ "eg_level2", "2", 0 ],
-			"obj-11::obj-6" : [ "eg_rate1[3]", "1", 0 ],
-			"obj-14::obj-22" : [ "eg_level1", "1", 0 ],
+			"obj-11::obj-20" : [ "eg_rate4[3]", "4", 0 ],
+			"obj-14::obj-11" : [ "active", "active", 0 ],
+			"obj-11::obj-16" : [ "eg_rate2[3]", "2", 0 ],
+			"obj-26::obj-18" : [ "eg_rate3[4]", "3", 0 ],
 			"obj-26::obj-11" : [ "active[4]", "active", 0 ],
+			"obj-26::obj-44" : [ "live.slider[4]", "Detune", 0 ],
+			"obj-1::obj-18" : [ "eg_rate3[1]", "3", 0 ],
+			"obj-27::obj-53" : [ "osc_mode[5]", "Mode", 0 ],
+			"obj-1::obj-16" : [ "eg_rate2[1]", "2", 0 ],
+			"obj-27::obj-11" : [ "active[5]", "active", 0 ],
+			"obj-1::obj-26" : [ "eg_level3[1]", "3", 0 ],
+			"obj-27::obj-22" : [ "eg_level1[5]", "1", 0 ],
 			"obj-14::obj-20" : [ "eg_rate4", "4", 0 ],
+			"obj-7::obj-22" : [ "eg_level1[2]", "1", 0 ],
+			"obj-7::obj-26" : [ "eg_level3[2]", "3", 0 ],
+			"obj-7::obj-11" : [ "active[2]", "active", 0 ],
+			"obj-11::obj-37" : [ "freq_coarse[3]", "Freq Coarse", 0 ],
+			"obj-11::obj-11" : [ "active[3]", "active", 0 ],
+			"obj-11::obj-18" : [ "eg_rate3[3]", "3", 0 ],
+			"obj-26::obj-7" : [ "output_level[4]", "Out Lvl", 0 ],
+			"obj-14::obj-28" : [ "eg_level4", "4", 0 ],
+			"obj-26::obj-24" : [ "eg_level2[4]", "2", 0 ],
+			"obj-26::obj-28" : [ "eg_level4[4]", "4", 0 ],
+			"obj-15::obj-4" : [ "keys_enabled", "Keys Enabled", 0 ],
+			"obj-27::obj-24" : [ "eg_level2[5]", "2", 0 ],
+			"obj-1::obj-6" : [ "eg_rate1[1]", "1", 0 ],
+			"obj-14::obj-53" : [ "osc_mode", "Mode", 0 ],
+			"obj-27::obj-43" : [ "freq_fine[5]", "Freq Fine", 0 ],
+			"obj-1::obj-37" : [ "freq_coarse[1]", "Freq Coarse", 0 ],
+			"obj-27::obj-16" : [ "eg_rate2[5]", "2", 0 ],
 			"obj-7::obj-7" : [ "output_level[2]", "Out Lvl", 0 ],
 			"obj-14::obj-18" : [ "eg_rate3", "3", 0 ],
-			"obj-27::obj-53" : [ "osc_mode[5]", "Mode", 0 ],
-			"obj-11::obj-44" : [ "live.slider[3]", "Detune", 0 ],
-			"obj-27::obj-18" : [ "eg_rate3[5]", "3", 0 ],
-			"obj-7::obj-43" : [ "freq_fine[2]", "Freq Fine", 0 ],
-			"obj-27::obj-16" : [ "eg_rate2[5]", "2", 0 ],
-			"obj-14::obj-7" : [ "output_level", "Out Lvl", 0 ],
-			"obj-27::obj-11" : [ "active[5]", "active", 0 ],
-			"obj-27::obj-22" : [ "eg_level1[5]", "1", 0 ],
-			"obj-14::obj-6" : [ "eg_rate1", "1", 0 ],
-			"obj-27::obj-20" : [ "eg_rate4[5]", "4", 0 ],
-			"obj-27::obj-7" : [ "output_level[5]", "Out Lvl", 0 ],
-			"obj-11::obj-24" : [ "eg_level2[3]", "2", 0 ],
-			"obj-27::obj-6" : [ "eg_rate1[5]", "1", 0 ],
-			"obj-1::obj-22" : [ "eg_level1[1]", "1", 0 ],
-			"obj-7::obj-22" : [ "eg_level1[2]", "1", 0 ],
-			"obj-26::obj-44" : [ "live.slider[4]", "Detune", 0 ],
-			"obj-1::obj-43" : [ "freq_fine[1]", "Freq Fine", 0 ],
-			"obj-11::obj-11" : [ "active[3]", "active", 0 ],
-			"obj-26::obj-43" : [ "freq_fine[4]", "Freq Fine", 0 ],
-			"obj-1::obj-28" : [ "eg_level4[1]", "4", 0 ],
-			"obj-26::obj-16" : [ "eg_rate2[4]", "2", 0 ],
-			"obj-7::obj-11" : [ "active[2]", "active", 0 ],
-			"obj-14::obj-11" : [ "active", "active", 0 ],
-			"obj-14::obj-53" : [ "osc_mode", "Mode", 0 ],
-			"obj-11::obj-53" : [ "osc_mode[3]", "Mode", 0 ],
-			"obj-14::obj-16" : [ "eg_rate2", "2", 0 ],
-			"obj-7::obj-44" : [ "live.slider[2]", "Detune", 0 ],
-			"obj-27::obj-24" : [ "eg_level2[5]", "2", 0 ],
-			"obj-11::obj-22" : [ "eg_level1[3]", "1", 0 ],
-			"obj-11::obj-26" : [ "eg_level3[3]", "3", 0 ],
-			"obj-11::obj-20" : [ "eg_rate4[3]", "4", 0 ],
-			"obj-14::obj-37" : [ "freq_coarse", "Freq Coarse", 0 ],
-			"obj-7::obj-24" : [ "eg_level2[2]", "2", 0 ],
-			"obj-11::obj-18" : [ "eg_rate3[3]", "3", 0 ],
-			"obj-1::obj-44" : [ "live.slider[1]", "Detune", 0 ],
-			"obj-11::obj-16" : [ "eg_rate2[3]", "2", 0 ],
-			"obj-1::obj-20" : [ "eg_rate4[1]", "4", 0 ],
-			"obj-1::obj-11" : [ "active[1]", "active", 0 ],
-			"obj-26::obj-18" : [ "eg_rate3[4]", "3", 0 ],
 			"obj-7::obj-16" : [ "eg_rate2[2]", "2", 0 ],
-			"obj-15::obj-4" : [ "keys_enabled", "Keys Enabled", 0 ],
-			"obj-7::obj-53" : [ "osc_mode[2]", "Mode", 0 ],
-			"obj-27::obj-26" : [ "eg_level3[5]", "3", 0 ],
-			"obj-11::obj-28" : [ "eg_level4[3]", "4", 0 ],
-			"obj-7::obj-26" : [ "eg_level3[2]", "3", 0 ],
-			"obj-1::obj-6" : [ "eg_rate1[1]", "1", 0 ],
-			"obj-14::obj-28" : [ "eg_level4", "4", 0 ],
-			"obj-1::obj-7" : [ "output_level[1]", "Out Lvl", 0 ],
-			"obj-1::obj-26" : [ "eg_level3[1]", "3", 0 ],
-			"obj-7::obj-18" : [ "eg_rate3[2]", "3", 0 ],
-			"obj-26::obj-6" : [ "eg_rate1[4]", "1", 0 ],
-			"obj-27::obj-28" : [ "eg_level4[5]", "4", 0 ],
-			"obj-27::obj-43" : [ "freq_fine[5]", "Freq Fine", 0 ],
-			"obj-11::obj-37" : [ "freq_coarse[3]", "Freq Coarse", 0 ],
-			"obj-7::obj-28" : [ "eg_level4[2]", "4", 0 ],
-			"obj-5" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1::obj-37" : [ "freq_coarse[1]", "Freq Coarse", 0 ],
-			"obj-14::obj-44" : [ "live.slider", "Detune", 0 ],
-			"obj-26::obj-20" : [ "eg_rate4[4]", "4", 0 ],
-			"obj-1::obj-18" : [ "eg_rate3[1]", "3", 0 ],
+			"obj-14::obj-16" : [ "eg_rate2", "2", 0 ],
+			"obj-7::obj-24" : [ "eg_level2[2]", "2", 0 ],
+			"obj-11::obj-24" : [ "eg_level2[3]", "2", 0 ],
+			"obj-14::obj-7" : [ "output_level", "Out Lvl", 0 ],
+			"obj-11::obj-43" : [ "freq_fine[3]", "Freq Fine", 0 ],
+			"obj-14::obj-6" : [ "eg_rate1", "1", 0 ],
+			"obj-11::obj-6" : [ "eg_rate1[3]", "1", 0 ],
+			"obj-26::obj-43" : [ "freq_fine[4]", "Freq Fine", 0 ],
+			"obj-26::obj-37" : [ "freq_coarse[4]", "Freq Coarse", 0 ],
 			"obj-14::obj-26" : [ "eg_level3", "3", 0 ],
 			"obj-26::obj-53" : [ "osc_mode[4]", "Mode", 0 ],
-			"obj-26::obj-37" : [ "freq_coarse[4]", "Freq Coarse", 0 ],
-			"obj-26::obj-7" : [ "output_level[4]", "Out Lvl", 0 ],
-			"obj-26::obj-28" : [ "eg_level4[4]", "4", 0 ],
-			"obj-7::obj-6" : [ "eg_rate1[2]", "1", 0 ],
+			"obj-1::obj-53" : [ "osc_mode[1]", "Mode", 0 ],
+			"obj-27::obj-20" : [ "eg_rate4[5]", "4", 0 ],
+			"obj-1::obj-7" : [ "output_level[1]", "Out Lvl", 0 ],
+			"obj-27::obj-37" : [ "freq_coarse[5]", "Freq Coarse", 0 ],
+			"obj-1::obj-24" : [ "eg_level2[1]", "2", 0 ],
+			"obj-27::obj-28" : [ "eg_level4[5]", "4", 0 ],
+			"obj-7::obj-44" : [ "live.slider[2]", "Detune", 0 ],
+			"obj-7::obj-28" : [ "eg_level4[2]", "4", 0 ],
+			"obj-7::obj-53" : [ "osc_mode[2]", "Mode", 0 ],
+			"obj-5" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-11::obj-22" : [ "eg_level1[3]", "1", 0 ],
+			"obj-14::obj-44" : [ "live.slider", "Detune", 0 ],
+			"obj-11::obj-28" : [ "eg_level4[3]", "4", 0 ],
+			"obj-14::obj-37" : [ "freq_coarse", "Freq Coarse", 0 ],
+			"obj-11::obj-26" : [ "eg_level3[3]", "3", 0 ],
 			"obj-26::obj-26" : [ "eg_level3[4]", "3", 0 ],
-			"obj-27::obj-37" : [ "freq_coarse[5]", "Freq Coarse", 0 ]
+			"obj-26::obj-22" : [ "eg_level1[4]", "1", 0 ],
+			"obj-26::obj-16" : [ "eg_rate2[4]", "2", 0 ],
+			"obj-1::obj-44" : [ "live.slider[1]", "Detune", 0 ],
+			"obj-14::obj-24" : [ "eg_level2", "2", 0 ],
+			"obj-27::obj-6" : [ "eg_rate1[5]", "1", 0 ],
+			"obj-1::obj-43" : [ "freq_fine[1]", "Freq Fine", 0 ],
+			"obj-27::obj-26" : [ "eg_level3[5]", "3", 0 ],
+			"obj-1::obj-22" : [ "eg_level1[1]", "1", 0 ],
+			"obj-7::obj-18" : [ "eg_rate3[2]", "3", 0 ],
+			"obj-7::obj-43" : [ "freq_fine[2]", "Freq Fine", 0 ],
+			"obj-7::obj-20" : [ "eg_rate4[2]", "4", 0 ],
+			"obj-11::obj-53" : [ "osc_mode[3]", "Mode", 0 ],
+			"obj-11::obj-7" : [ "output_level[3]", "Out Lvl", 0 ],
+			"obj-26::obj-20" : [ "eg_rate4[4]", "4", 0 ],
+			"obj-26::obj-6" : [ "eg_rate1[4]", "1", 0 ],
+			"obj-27::obj-7" : [ "output_level[5]", "Out Lvl", 0 ],
+			"obj-1::obj-20" : [ "eg_rate4[1]", "4", 0 ],
+			"obj-27::obj-18" : [ "eg_rate3[5]", "3", 0 ],
+			"obj-1::obj-28" : [ "eg_level4[1]", "4", 0 ],
+			"obj-14::obj-22" : [ "eg_level1", "1", 0 ],
+			"obj-27::obj-44" : [ "live.slider[5]", "Detune", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -635,6 +657,10 @@
 			}
 , 			{
 				"name" : "j.receive~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.return.mxo",
 				"type" : "iLaX"
 			}
 , 			{
